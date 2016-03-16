@@ -7,8 +7,9 @@ source $DIR/config.sh
 
 ## start $BASE_NAME container
 docker run --name=$BASE_NAME -d \
+        -p 1229:1229 \
+	-p 1116:1116 \
         $IMAGE_ID
-
 
 #docker run -it --name mynode $(docker images | grep nodejs5.8.0 | awk 'NR<2{print $3}')
 #docker rm mynode
