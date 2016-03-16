@@ -11,5 +11,5 @@ docker run --name=$BASE_NAME -d \
 	-p 1116:1116 \
         $IMAGE_ID
 
-#docker run -it --name mynode $(docker images | grep nodejs5.8.0 | awk 'NR<2{print $3}')
+#docker run -it --name mynode $(docker images | grep socket | awk 'NR<2{print $3}') /bin/bash
 #docker rm mynode
